@@ -3,7 +3,7 @@
 
 Diseñador:   Erick Alejandrop Arambula Saldaña 
 Registro:    21110401
-Grupo:       3.F
+Grupo:       7.F
  
 
                                    Proyecto: "CONRTRL DE LIBROS"      
@@ -1601,7 +1601,7 @@ public void actionPerformed(ActionEvent accion){
  
 	Connection cn=null;
 	PreparedStatement pst=null;
-	String AccionSQL="INSERT INTO libros VALUES(?,?,?,?,?,0)";
+	String AccionSQL="INSERT INTO libros (Codigo, Titulo, Autor, Editorial, Categoria) VALUES(?,?,?,?,?)";
 	System.out.println("A punto de conectar con base de datos");
  	try{
 	  cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/moscow_books","root","");
